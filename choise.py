@@ -1,3 +1,4 @@
+/github/workspace/choise.py
 import random
 
 words = [
