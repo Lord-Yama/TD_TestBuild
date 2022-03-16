@@ -36,7 +36,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/td_devops:test_repo_docker
   deploy-final: 
-    needs: previous job name
+    needs: super-lint
     name: second
     runs-on: self-hosted agent
     steps:
