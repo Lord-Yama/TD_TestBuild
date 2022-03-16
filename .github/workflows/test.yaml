@@ -35,4 +35,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/td_devops:test_repo_docker
-          ---   
+
