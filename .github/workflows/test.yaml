@@ -35,4 +35,11 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/td_devops:test_repo_docker
- 
+  deploy-final: 
+    needs: previous job name
+    name: second
+    runs-on: self-hosted agent
+    steps:
+      - name: Actor
+        run: echo "{{ github.actor }}"
+
