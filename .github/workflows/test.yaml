@@ -14,7 +14,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Executing python code 
+      - name: Executing python code
         uses: actions/setup-python@v2
         with:
           python-version: '3.8.10'
@@ -33,5 +33,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/td_devops:test_repo_docker
-          
+          tags: ${{ secrets.DOCKER_USERNAME }}/td_devops:test_repo_docker         
